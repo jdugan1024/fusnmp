@@ -5,7 +5,7 @@ Setup file for fusnmp distribution.
 import sys
 from setuptools import setup
 
-VERSION = '1.0.3'
+VERSION = '1.0.0'
 
 try:
     # Use pandoc to convert .md -> .rst when uploading to pypi
@@ -32,7 +32,7 @@ setup(
     license='GPL',
     packages=["fusnmp"],
     classifiers=[
-        'Development Status :: 4 - Beta',
+        'Development Status :: 7 - Inactive',
         'Environment :: Console',
         'Intended Audience :: Developers',
         'Programming Language :: Python',
