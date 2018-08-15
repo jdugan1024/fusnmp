@@ -8,6 +8,9 @@ Vagrant.configure("2") do |config|
 
   config.ssh.insert_key = false
   config.vm.hostname = "fusnmp-vagrant"
+  # makes tito much easier
+  config.ssh.forward_agent = true
+  config.vm.provision "file", source: "~/.gitconfig", destination: ".gitconfig"
   config.vm.provision "shell", inline: <<-SHELL
     yum install -y \
       net-snmp net-snmp-agent-libs net-snmp-devel net-snmp-libs net-snmp-utils \
